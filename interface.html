@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Détecteur de Documents Falsifiés</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
+        .drop-zone { border: 2px dashed #007bff; padding: 30px; margin: 20px auto; max-width: 500px; border-radius: 10px; }
+        button { background-color: #28a745; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Analyse de Documents Officiels</h1>
+    
+    <div class="drop-zone">
+        <h3>1. Document Officiel de Référence</h3>
+        <input type="file" id="docOfficiel">
+    </div>
+
+    <div class="drop-zone">
+        <h3>2. Document Suspect à Vérifier</h3>
+        <input type="file" id="docSuspect">
+    </div>
+
+    <button onclick="analyser()">Lancer la détection de fraude</button>
+
+    <script>
+        function analyser() {
+            alert("Analyse en cours... Comparaison des tampons et des signatures.");
+        }
+    </script>
+</body>
+</html>
